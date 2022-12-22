@@ -3,22 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* html { 
-  background: url(Reservations.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
+
 .main{
   width: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(backgroundReservations.jpg);
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(reservations.jpg);
   
   background-position: center;
   background-size: cover;
   background-repeat:repeat-y;
   width:auto; 
-  height: 180vh;
+  height: 150vh;
 }
 
 .navbar{
@@ -78,7 +72,7 @@ ul li a:hover{
 
 
 
-/* .btn{
+.btn{
   width: 100px;
   height: 40px;
   background: bisque;
@@ -90,18 +84,18 @@ ul li a:hover{
   border-bottom-right-radius: 5px;
   transition: 0.2s ease;
   cursor: pointer;
-} */
-/* .btn:hover{
+}
+.btn:hover{
   color: #000;
 }
 
 .btn:focus{
   outline: none;
-} */
-/* 
+}
+
 .srch:focus{
   outline: none;
-} */
+}
 
 .content{
   width: 1200px;
@@ -172,7 +166,7 @@ ul li a:hover{
   width: 220px;
   font-family: sans-serif;
   text-align: center;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 22px;
   background-color: #fff;
   border-radius: 10px;
@@ -256,7 +250,11 @@ ul li a:hover{
 }
 
 
+label{
+  color: rgb(255, 255, 255);
 
+  
+}
 
 
 
@@ -271,7 +269,7 @@ input[type=text], select, textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   background-color: transparent;
-  color: #000;
+  color: rgb(255, 255, 255);
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   
@@ -284,7 +282,7 @@ input[type=number], select, textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   background-color: transparent;
-  
+  color: rgb(0, 0, 0);
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   
@@ -311,7 +309,7 @@ input[type=Date], select, textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   background-color: transparent;
-  
+  color: #fff;
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   
@@ -321,7 +319,7 @@ input[type=Date], select, textarea {
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: #CC6666;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -339,7 +337,24 @@ input[type=submit]:hover {
   background-color: transparent;
   padding: 20px;
   margin-top: 3%;
+  width: 500px;
+  max-width: 1000px;
+ margin-left: 32%;
+  align-items: center;
 
+  
+}
+option{
+  color: rgb(255, 255, 255);
+ background-color: rgb(186, 185, 177);
+}
+#Tel{
+  color: rgb(255, 255, 255);
+
+}
+
+#Persona{
+  color: rgb(255, 255, 255);
   
 }
 
