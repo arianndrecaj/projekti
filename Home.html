@@ -31,20 +31,65 @@
 
                 <button class="cn"><a href="Rezervimet.html">Rezervo tani!</a></button>
 
-                <div class="form">
-                    <h2>Kyquni</h2>
-                    <input type="email" name="email" placeholder="Shenoni Email">
-                    <input type="password" name="" placeholder="Shenoni Password">
-                    <button class="btnn"><a href="Rezervimet.html">Vazhdo</a></button>
+             
 
-                    <p class="link">Nuk keni llogari?<br>
-                    <a href="signup.html">Regjistrohu </a> ketu</a></p>
-                 
+                  <div class="background">
+                    <div class="shape"></div>
+                    <div class="shape"></div>
+                </div>
+                <form name="f1" onsubmit="return validate()">
+                    <script type="text/javascript">  
+                        function validate(){  
+                        var name=document.f1.name.value;  
+                        var passwordlength=document.f1.password.value.length;  
+                        var status=false;  
+                        if(name==""){  
+                        document.getElementById("namelocation").innerHTML=  
+                        "Ju lutem shenoni email!";  
+                        status=false;
+                        }
+                          
+                        if(passwordlength<6){  
+                        document.getElementById("passwordlocation").innerHTML=  
+                        "Password duhet te jete me i madh 6 karaktere!";  
+                        status=false; 
+                        }else{  
+                        document.getElementById("passwordlocation").innerHTML= window.location.href = "Rezervimet.html";
+                        }  
+                          
+                        return status;  
+                        }  
+                        </script>  
+                    <h3>Login Here</h3>
+                    <div >
+                    <label for="email">Email</label>
+                    <input type="email" name="name" id="email"  placeholder="email@shembull.com" >
+                    <span id="namelocation" style="color:red"></span>
+            
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="shenoni password">
+                    <span id="passwordlocation" style="color:red"></span>
+                        </form>
+                        <button type="submit" value="register">Login</button>
+            <br><br>
+                     <span id="Register"><a href="Rezervimet.html">Regjistrohuni ketu!</a></span>   
+                        
+              
+                        </div>
+                        
+                   
+                   
+                </form> 
+
+
+
+
+
                 </div>
                     </div>
                 </div>
         </div>
     </div>
-    <!-- <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> -->
+    
 </body>
 </html>
